@@ -1,0 +1,62 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+#picole {
+  width: 100px;
+  padding-top: 40%;
+  position: absolute;
+  font-size: medium;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.popsicle {
+  position: relative;
+  width: 150px;
+  height: 230px;
+  border: 3px solid black;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  background: linear-gradient(
+    320deg,
+    red 0%,
+    red 20%,
+    blue 20%,
+    blue 40%,
+    green 40%,
+    green 60%,
+    purple 60%,
+    purple 100%
+  );
+  background-size: 200% 200%;
+  animation: popsicle-animation 5s linear infinite forwards;
+}
+
+@keyframes popsicle-animation {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.stick {
+  position: absolute;
+  bottom: -36%;
+  margin-left: 50px;
+  width: 40px;
+  height: 80px;
+  border: 3px solid black;
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #ffee59;
+}
